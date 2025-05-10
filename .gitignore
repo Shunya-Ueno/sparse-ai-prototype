@@ -90,3 +90,4 @@ cython_debug/
 .ruff_cache/
 .pypirc
 
+glove.6B.50d.txt
