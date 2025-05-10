@@ -1,3 +1,5 @@
 *.npy filter=lfs diff=lfs merge=lfs -text
 *.pkl filter=lfs diff=lfs merge=lfs -text
 *.model filter=lfs diff=lfs merge=lfs -text
+"dictionary.npy filter=lfs diff=lfs merge=lfs -text" 
+"dictionary_model.pkl filter=lfs diff=lfs merge=lfs -text" 
