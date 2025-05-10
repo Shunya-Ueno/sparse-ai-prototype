@@ -44,3 +44,13 @@ for alpha in alphas:
             print("Next token:", predict_next_token(prompt, coder))
         except Exception as e:
             print("Error:", e)
+
+# sparse_coding.py の末尾に追加
+def generate_sparse_output(user_input, alpha=0.5):
+    coder = SparseCoder(dictionary=dictionary, transform_algorithm='lasso_lars', transform_alpha=alpha)
+    
+    try:
+        next_token = predict_next_token(user_input, coder)
+        return f"{user_input} {next_token}"
+    except Exception as e:
+        return f"エラーが発生しました: {str(e)}"
