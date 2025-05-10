@@ -1,0 +1,6 @@
+# app.py の上部で、あなたのモジュールをインポート
+from your_module import generate_sparse_output  # 実際のモジュール名に置き換えてください
+
+# 仮の関数を、実際の生成関数に置き換え
+def sparse_generate(user_input):
+    return generate_sparse_output(user_input)
